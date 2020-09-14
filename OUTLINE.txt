@@ -1,0 +1,20 @@
+CONCEPTION DIMENTIONNELLE:
+	shema en etoile [x]
+DATA CLEANING & DATA STAGING TABLE
+	exportation vers CSV[x]
+		sous SPOON(PENTAHO)[x]
+		sous SSIS [x]
+			flow task + data flow [x]
+DATA WAREHOUSE CREATION
+	sous PENTAHO [x]
+	sous SSIS  [x]
+REPORTING
+	sous Tableau
+	sous SSRS-SSAS
+DATAMINING
+	sous SSAS
+		DECISION TREE
+		CLUSTERING
+
+
+MERCI POUR VOTRE ATTENTION!

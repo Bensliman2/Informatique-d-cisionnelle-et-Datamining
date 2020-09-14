@@ -1,0 +1,166 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SCOLARITE ANALYSIS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>sZBHcXUYirw3zDu3iQtv28Th3tA=6/15/2020 5:46:29 PM6/15/2020 5:40:58 PM</TimeStamp>
+        <ID>
+          <String>ScolariteDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>8YaD2Sxyo19/4rF6+hfqxS7KAhE=6/15/2020 5:41:31 PM6/15/2020 5:41:31 PM</TimeStamp>
+        <ID>
+          <String>ScolariteDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>dQDSSjzIqMpgO57fSPZ12TGc/tg=6/15/2020 6:25:53 PM6/15/2020 6:25:53 PM</TimeStamp>
+        <ID>
+          <String>ScolariteSTAGE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RwV3lg18oCJ7Utooj6TGm6ifJwc=6/15/2020 8:09:39 PM6/15/2020 5:43:09 PM</TimeStamp>
+        <ID>
+          <String>FILIERE DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gvpju0mAOzxMX3XZZxpRVvqbWgM=6/15/2020 5:53:48 PM6/15/2020 5:43:09 PM</TimeStamp>
+        <ID>
+          <String>SEXE DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YIBkn5wfKSiJerLIBLTvQ9PUzQo=6/15/2020 5:53:48 PM6/15/2020 5:43:09 PM</TimeStamp>
+        <ID>
+          <String>ETUDIANT DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XLuasfL8/RqQ5XTVgMz7MFWF9FM=6/15/2020 5:58:21 PM6/15/2020 5:43:09 PM</TimeStamp>
+        <ID>
+          <String>ANNEE VALIDATION DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EmhAyXXqL85rIrXEL8pdHNRn+BI=6/15/2020 5:53:48 PM6/15/2020 5:43:09 PM</TimeStamp>
+        <ID>
+          <String>SESSION DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LfwYfaGl+FN0AtxWwL+rZ7isSnE=6/15/2020 5:53:48 PM6/15/2020 5:43:09 PM</TimeStamp>
+        <ID>
+          <String>SEMESTRE DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KUlQAaw597gZdCE2f+Lt16dhm7I=6/15/2020 5:53:48 PM6/15/2020 5:43:10 PM</TimeStamp>
+        <ID>
+          <String>RESULTAT DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oEp4NzxObiAR0YxRtvLQT0x0Ezw=6/15/2020 5:53:48 PM6/15/2020 5:43:10 PM</TimeStamp>
+        <ID>
+          <String>ANNEE DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>izykuYGeuWRvM2jVMGoVO8eLqDE=6/15/2020 5:53:48 PM6/15/2020 5:43:10 PM</TimeStamp>
+        <ID>
+          <String>VILLE DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lpaNd4AV6YXbBY343yknz0ZMFg8=6/15/2020 5:53:48 PM6/15/2020 5:43:10 PM</TimeStamp>
+        <ID>
+          <String>MODULE DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gJZJ9WcEcq2mUoLmBYUzqInGct0=6/15/2020 5:53:48 PM6/15/2020 5:43:10 PM</TimeStamp>
+        <ID>
+          <String>BAC DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>jsf8QxYrO2p1Xj0/GF4oTrtKo5Q=6/15/2020 8:09:39 PM6/15/2020 5:57:39 PMEpatN7LYYu7ayR3+Vnvp+Ix2MFw=6/15/2020 5:57:39 PM6/15/2020 5:57:39 PM</TimeStamp>
+        <ID>
+          <String>ScolariteDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>vpXRraDREZsgVd7/dsn05X6szq4=6/15/2020 6:28:16 PM6/15/2020 6:28:16 PM</TimeStamp>
+        <ID>
+          <String>STAGE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>bEd67KM9a1UXYw+rB1TpdggC9sE=6/15/2020 7:43:31 PM6/15/2020 7:43:31 PM</TimeStamp>
+        <ID>
+          <String>CLUSTERING</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>kJbTRO7+rjIKCpvPLUHnMopENV4=6/15/2020 8:12:16 PM6/15/2020 8:12:16 PM</TimeStamp>
+        <ID>
+          <String>DECISION TREE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>WQzFki3DgIBrJ8ytADFEViffruc=6/15/2020 8:16:05 PM6/15/2020 8:15:55 PM</TimeStamp>
+        <ID>
+          <String>CLUSTERING SCOLARITE</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Jxl+wOFHDqjBWNJxRGWdpTo2uDA=6/15/2020 5:40:40 PM6/15/2020 5:40:40 PM</TimeStamp>
+      <ID>
+        <String>SCOLARITE ANALYSIS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-06-15T19:16:30.276667Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="DESKTOP-8OLFL79\abdelbari"
+  DTS:CreatorComputerName="DESKTOP-8OLFL79"
+  DTS:CreationDate="6/15/2020 2:42:01 AM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{1F131A55-308B-4120-9CE0-1CCFA21D4FA0}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ETL"
+  DTS:DTSID="{B46BED28-0372-4306-B3D7-02F00267AFA9}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.scolarite]"
+      DTS:ObjectName="LocalHost.scolarite"
+      DTS:DTSID="{1CC25EDF-1097-4427-9A41-76488B9BD278}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=scolarite;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DIMENTIONS CREATION"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DIMENTIONS CREATION"
+      DTS:DTSID="{52FFB12E-4EAB-481B-AEA1-164453DC6B44}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1CC25EDF-1097-4427-9A41-76488B9BD278}"
+          SQLTask:SqlStatementSource="create table ANNEE_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;ANNEE int&#xA;);&#xA;&#xA;insert into ANNEE_DIM(ANNEE)(select distinct ANNEE from STAGE);&#xA;&#xA;create table ANNEE_VALIDATION_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;ANNEE_VALIDATION int&#xA;);&#xA;&#xA;insert into ANNEE_VALIDATION_DIM(ANNEE_VALIDATION) select distinct [ANNEE VALIDATION] from STAGE;&#xA;&#xA;create table ETUDIANT_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;COD_ETU bigint,&#xA;&#x9;CNE bigint&#xA;);&#xA;&#xA;insert into ETUDIANT_DIM(COD_ETU, CNE) select distinct [COD_ETU], [CNE] from STAGE;&#xA;&#xA;create table FILIERE_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;FILIERE nvarchar(4)&#xA;);&#xA;&#xA;insert into FILIERE_DIM(FILIERE) select distinct [FILIERE]from STAGE;&#xA;&#xA;create table MODULE_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;MODULE nvarchar(50)&#xA;);&#xA;&#xA;insert into MODULE_DIM(MODULE) select distinct [MODULE] from STAGE;&#xA;&#xA;create table RESULTAT_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;RESULTAT nvarchar(3)&#xA;);&#xA;&#xA;insert into RESULTAT_DIM(RESULTAT) select distinct RESULTAT from STAGE;&#xA;&#xA;create table SEMESTRE_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;SEMESTRE nvarchar(2)&#xA;);&#xA;&#xA;insert into SEMESTRE_DIM(SEMESTRE) select distinct SEMESTRE from STAGE;&#xA;&#xA;create table SESSION_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;[SESSION] nvarchar(11)&#xA;);&#xA;&#xA;insert into SESSION_DIM([SESSION]) select distinct [SESSION] from STAGE;&#xA;&#xA;create table SEXE_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;SEXE nvarchar(1)&#xA;);&#xA;&#xA;insert into SEXE_DIM(SEXE) select distinct SEXE from STAGE;&#xA;&#xA;create table VILLE_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;VILLE nvarchar(24)&#xA;);&#xA;&#xA;insert into VILLE_DIM(VILLE) select distinct VILLE from STAGE;&#xA;&#xA;create table BAC_DIM(&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;[TYPE BAC] nvarchar(26)&#xA;);&#xA;&#xA;insert into BAC_DIM([TYPE BAC]) select distinct BAC from STAGE;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FACT TABLE CREATION"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FACT TABLE CREATION"
+      DTS:DTSID="{35C83F49-005F-4859-B38E-3106445C714B}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1CC25EDF-1097-4427-9A41-76488B9BD278}"
+          SQLTask:SqlStatementSource="create table [SCOLARITE_FACT](&#xA;&#x9;id int identity(1,1) primary key,&#xA;&#x9;ANNEE_ID int FOREIGN KEY REFERENCES [ANNEE_DIM](id),&#xA;&#x9;ANNEE_VALIDATION_ID int FOREIGN KEY REFERENCES [ANNEE_VALIDATION_DIM](id),&#xA;&#x9;ETUDIANT_ID int FOREIGN KEY REFERENCES ETUDIANT_DIM(id),&#xA;&#x9;FILIERE_ID int FOREIGN KEY REFERENCES FILIERE_DIM(id),&#xA;&#x9;MODULE_ID int FOREIGN KEY REFERENCES MODULE_DIM(id),&#xA;&#x9;RESULTAT_ID int FOREIGN KEY REFERENCES RESULTAT_DIM(id),&#xA;&#x9;SEMESTRE_ID int FOREIGN KEY REFERENCES SEMESTRE_DIM(id),&#xA;&#x9;SESSION_ID int FOREIGN KEY REFERENCES SESSION_DIM(id),&#xA;&#x9;SEXE_ID int FOREIGN KEY REFERENCES SEXE_DIM(id),&#xA;&#x9;BAC_ID int FOREIGN KEY REFERENCES BAC_DIM(id),&#xA;&#x9;VILLE_ID int FOREIGN KEY REFERENCES VILLE_DIM(id),&#xA;&#x9;NOTE real&#xA;);&#xA;&#xA;insert into [SCOLARITE_FACT](ANNEE_ID, ANNEE_VALIDATION_ID, ETUDIANT_ID, FILIERE_ID, MODULE_ID, RESULTAT_ID, SEMESTRE_ID, SESSION_ID, SEXE_ID, BAC_ID, VILLE_ID, NOTE) select &#xA;[ANNEE_DIM].id AS &quot;ANNEE_ID&quot;,&#xA;[ANNEE_VALIDATION_DIM].id AS &quot;ANNEE_VALIDATION_ID&quot;,&#xA;ETUDIANT_DIM.id AS &quot;ETUDIANT_ID&quot;,&#xA;FILIERE_DIM.id AS &quot;FILIERE_ID&quot;,&#xA;MODULE_DIM.id AS &quot;MODULE_ID&quot;,&#xA;RESULTAT_DIM.id AS &quot;RESULTAT_ID&quot;,&#xA;SEMESTRE_DIM.id AS &quot;SEMESTRE_ID&quot;,&#xA;SESSION_DIM.id AS &quot;SESSION_ID&quot;,&#xA;SEXE_DIM.id AS &quot;SEXE_ID&quot;,&#xA;BAC_DIM.id AS &quot;BAC_ID&quot;,&#xA;VILLE_DIM.id AS &quot;VILLE_ID&quot;,&#xA;NOTE&#xA;FROM [STAGE] &#xA;LEFT JOIN [ANNEE_DIM] ON [STAGE].ANNEE = [ANNEE_DIM].[ANNEE]&#xA;LEFT JOIN [ANNEE_VALIDATION_DIM] ON [STAGE].[ANNEE VALIDATION] = [ANNEE_VALIDATION_DIM].[ANNEE_VALIDATION]&#xA;LEFT JOIN ETUDIANT_DIM ON [STAGE].COD_ETU = ETUDIANT_DIM.COD_ETU&#xA;LEFT JOIN FILIERE_DIM ON [STAGE].FILIERE = FILIERE_DIM.FILIERE&#xA;LEFT JOIN MODULE_DIM ON [STAGE].MODULE = MODULE_DIM.MODULE&#xA;LEFT JOIN RESULTAT_DIM ON [STAGE].RESULTAT = RESULTAT_DIM.RESULTAT&#xA;LEFT JOIN SEMESTRE_DIM ON [STAGE].SEMESTRE = SEMESTRE_DIM.SEMESTRE&#xA;LEFT JOIN SESSION_DIM ON [STAGE].[SESSION] = SESSION_DIM.[SESSION]&#xA;LEFT JOIN SEXE_DIM ON [STAGE].SEXE = SEXE_DIM.SEXE&#xA;LEFT JOIN BAC_DIM ON [STAGE].BAC = BAC_DIM.[TYPE BAC]&#xA;LEFT JOIN VILLE_DIM ON [STAGE].VILLE = VILLE_DIM.VILLE;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:From="Package\DIMENTIONS CREATION"
+      DTS:To="Package\FACT TABLE CREATION"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:DTSID="{48457877-794A-4C20-8DC5-CB36E488FF5A}"
+      DTS:CreationName="" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="195,42"
+          Id="Package\DIMENTIONS CREATION"
+          TopLeft="197,103" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\FACT TABLE CREATION"
+          TopLeft="194,278" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="291.75,145">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,133"
+              Start="0,0"
+              End="0,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

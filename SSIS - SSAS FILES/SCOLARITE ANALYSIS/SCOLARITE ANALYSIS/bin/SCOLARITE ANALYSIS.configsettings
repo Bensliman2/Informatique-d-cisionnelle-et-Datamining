@@ -1,0 +1,82 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>ScolariteDW</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=scolarite</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>FILIERE DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>SEXE DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>ETUDIANT DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>ANNEE VALIDATION DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>SESSION DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>SEMESTRE DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>RESULTAT DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>ANNEE DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>VILLE DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>MODULE DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>BAC DIM</ID>
+      </Dimension>
+    </Dimensions>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>STAGE</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>CLUSTERING</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>DECISION TREE</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>CLUSTERING SCOLARITE</ID>
+      </MiningStructure>
+    </MiningStructures>
+    <Cubes>
+      <Cube>
+        <ID>ScolariteDW</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>SCOLARITE FACT</ID>
+            <Partitions>
+              <Partition>
+                <ID>SCOLARITE FACT</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

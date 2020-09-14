@@ -1,0 +1,137 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5d85e2c3-a19b-46b1-af36-462e20c5aef0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ScolariteSTAGE</ID>
+  <Name>ScolariteSTAGE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ScolariteDW</DataSourceID>
+  <Schema>
+    <xs:schema id="ScolariteSTAGE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ScolariteSTAGE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="8738c12e-94d8-4fdf-8994-6b68c2755978">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_STAGE" msprop:design-time-name="572617a5-0df2-403f-9360-46e95313b6e6" msprop:DbTableName="STAGE" msprop:FriendlyName="STAGE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MODULE_x0020_CODE" msprop:design-time-name="45e727f8-7b62-4503-8892-6cf17811c55f" msprop:DbColumnName="MODULE CODE" msprop:FriendlyName="MODULE CODE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOTE" msprop:design-time-name="c6894178-cf46-442b-b703-9fa15694e47a" msprop:DbColumnName="NOTE" msprop:FriendlyName="NOTE" type="xs:float" minOccurs="0" />
+                  <xs:element name="RESULTAT" msprop:design-time-name="b2e48cd1-1f4f-4405-9098-7956c3308fde" msprop:DbColumnName="RESULTAT" msprop:FriendlyName="RESULTAT" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SESSION" msprop:design-time-name="28204e50-a532-4a37-9df7-60812aac37a6" msprop:DbColumnName="SESSION" msprop:FriendlyName="SESSION" type="xs:short" minOccurs="0" />
+                  <xs:element name="ANNEE_x0020_VALIDATION" msprop:design-time-name="289a9d52-fcd9-40ee-9dbd-c4a44cb041dc" msprop:DbColumnName="ANNEE VALIDATION" msprop:FriendlyName="ANNEE VALIDATION" type="xs:int" minOccurs="0" />
+                  <xs:element name="COD_ETU" msprop:design-time-name="122b41c0-68e0-4189-8f9c-27bbb97011f3" msprop:DbColumnName="COD_ETU" msprop:FriendlyName="COD_ETU" type="xs:long" minOccurs="0" />
+                  <xs:element name="CNE" msprop:design-time-name="2f912922-ee24-44e8-8140-7058e21fe979" msprop:DbColumnName="CNE" msprop:FriendlyName="CNE" type="xs:long" minOccurs="0" />
+                  <xs:element name="FILIERE" msprop:design-time-name="3640f2c9-f31f-482e-b3d0-a38bdf60bc4f" msprop:DbColumnName="FILIERE" msprop:FriendlyName="FILIERE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ANNEE" msprop:design-time-name="755608a6-24d8-4a9a-95e2-c4c78159634f" msprop:DbColumnName="ANNEE" msprop:FriendlyName="ANNEE" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEMESTRE" msprop:design-time-name="6ecaa984-6cb8-49f9-b7d6-2d6ad954db03" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SEXE" msprop:design-time-name="43140e86-2899-4dba-9946-2b5f0ff27c58" msprop:DbColumnName="SEXE" msprop:FriendlyName="SEXE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BAC_x0020_DATE" msprop:design-time-name="f43fc9f9-f538-48e4-bad1-78b9e50d55b9" msprop:DbColumnName="BAC DATE" msprop:FriendlyName="BAC DATE" type="xs:int" minOccurs="0" />
+                  <xs:element name="BAC_x0020_TYPE" msprop:design-time-name="42058b39-8695-43cb-8c49-d227ab652790" msprop:DbColumnName="BAC TYPE" msprop:FriendlyName="BAC TYPE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="36" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VILLE" msprop:design-time-name="c3d6c80c-324e-4823-a763-00bc99c5f43d" msprop:DbColumnName="VILLE" msprop:FriendlyName="VILLE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="24" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MODULE" msprop:design-time-name="f0fb9d09-c503-4435-aa76-e42cd95dda1b" msprop:DbColumnName="MODULE" msprop:FriendlyName="MODULE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BAC" msprop:design-time-name="e90cc2f1-e4a6-4301-83f3-bfaa2d5296a2" msprop:DbColumnName="BAC" msprop:FriendlyName="BAC" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="26" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SESSION_x0020_STR" msprop:design-time-name="f35affbf-9c9d-4c16-94f4-3d7340e1ce78" msprop:DbColumnName="SESSION STR" msprop:FriendlyName="SESSION STR" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <ScolariteSTAGE xmlns="" />
+  </Schema>
+</DataSourceView>

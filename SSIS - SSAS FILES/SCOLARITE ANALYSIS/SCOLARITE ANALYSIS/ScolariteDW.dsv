@@ -1,0 +1,302 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bad940e0-ceb1-45f6-8a9d-7c26b12cd782" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ScolariteDW</ID>
+  <Name>ScolariteDW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ScolariteDW</DataSourceID>
+  <Schema>
+    <xs:schema id="ScolariteDW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ScolariteDW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ecdbf39b-3124-4919-b0e6-4add206349ff">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_SCOLARITE_FACT" msprop:design-time-name="da11cfbf-4121-41d9-9fcd-75ba45b50220" msprop:DbTableName="SCOLARITE_FACT" msprop:FriendlyName="SCOLARITE_FACT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6c293db3-1a98-4c8c-ae5e-efa1cd8b6e9e" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="ANNEE_ID" msprop:design-time-name="8e023507-d0ec-41f8-b97d-f4008ae388fa" msprop:DbColumnName="ANNEE_ID" msprop:FriendlyName="ANNEE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="ANNEE_VALIDATION_ID" msprop:design-time-name="3d6c964e-599a-4246-ada6-3ff8adb06216" msprop:DbColumnName="ANNEE_VALIDATION_ID" msprop:FriendlyName="ANNEE_VALIDATION_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="ETUDIANT_ID" msprop:design-time-name="c1b5fdf2-cd22-4b7f-8e96-255c443d565a" msprop:DbColumnName="ETUDIANT_ID" msprop:FriendlyName="ETUDIANT_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FILIERE_ID" msprop:design-time-name="60857718-0c82-4a4e-a84d-cc73871be321" msprop:DbColumnName="FILIERE_ID" msprop:FriendlyName="FILIERE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="MODULE_ID" msprop:design-time-name="ba881dee-bd68-4ca7-a47e-f980a2f7f1e9" msprop:DbColumnName="MODULE_ID" msprop:FriendlyName="MODULE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RESULTAT_ID" msprop:design-time-name="bee1e592-d308-414f-a727-bf1a03e63804" msprop:DbColumnName="RESULTAT_ID" msprop:FriendlyName="RESULTAT_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEMESTRE_ID" msprop:design-time-name="8565a6a3-935f-471f-b208-b5575ac01ad3" msprop:DbColumnName="SEMESTRE_ID" msprop:FriendlyName="SEMESTRE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SESSION_ID" msprop:design-time-name="07e1c508-0c3e-419c-945b-a062a9c9e65b" msprop:DbColumnName="SESSION_ID" msprop:FriendlyName="SESSION_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEXE_ID" msprop:design-time-name="71081916-ea85-4eff-bb8d-adf97aab9812" msprop:DbColumnName="SEXE_ID" msprop:FriendlyName="SEXE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BAC_ID" msprop:design-time-name="aa1427a7-2c19-46f7-b8ea-475e01745861" msprop:DbColumnName="BAC_ID" msprop:FriendlyName="BAC_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="VILLE_ID" msprop:design-time-name="4bd1f3d8-ca2c-4085-95ae-4ea2b876b072" msprop:DbColumnName="VILLE_ID" msprop:FriendlyName="VILLE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="NOTE" msprop:design-time-name="e73a5c48-3638-45c6-a43e-eeeddcac7b62" msprop:DbColumnName="NOTE" msprop:FriendlyName="NOTE" type="xs:float" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ANNEE_VALIDATION_DIM" msprop:design-time-name="2f02ae51-7ad5-491a-b429-ffb04cbda436" msprop:DbTableName="ANNEE_VALIDATION_DIM" msprop:FriendlyName="ANNEE_VALIDATION_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b361d6ad-2d51-4886-9d15-568934b733ec" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="ANNEE_VALIDATION" msprop:design-time-name="8ceefcdd-0a85-44d8-9a42-b9b50f0175d0" msprop:DbColumnName="ANNEE_VALIDATION" msprop:FriendlyName="ANNEE_VALIDATION" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SEXE_DIM" msprop:design-time-name="e0a4403b-1685-416a-8d6c-c9999c15c5be" msprop:DbTableName="SEXE_DIM" msprop:FriendlyName="SEXE_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3b4a54c3-8a6d-44ad-8bdc-0ae21d0ebdc0" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="SEXE" msprop:design-time-name="04a3d7b5-fe06-429c-8331-eae81342d11a" msprop:DbColumnName="SEXE" msprop:FriendlyName="SEXE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_BAC_DIM" msprop:design-time-name="280da541-8320-4749-879b-e6dd083d962d" msprop:DbTableName="BAC_DIM" msprop:FriendlyName="BAC_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fba2ba30-b40c-4516-8059-032828c9c24c" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="TYPE_x0020_BAC" msprop:design-time-name="27977e39-c816-4199-bcc4-ea815e51ef71" msprop:DbColumnName="TYPE BAC" msprop:FriendlyName="TYPE BAC" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="26" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MODULE_DIM" msprop:design-time-name="3b91ca1c-7dd8-41ab-b3fc-46cb7fe24b38" msprop:DbTableName="MODULE_DIM" msprop:FriendlyName="MODULE_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f7cd1ea9-786c-4090-b42b-44446818348d" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="MODULE" msprop:design-time-name="1c1f578a-403f-4482-952d-9298cd25d0b3" msprop:DbColumnName="MODULE" msprop:FriendlyName="MODULE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SESSION_DIM" msprop:design-time-name="28a8c07c-460e-4743-91b0-5fe8cfefbd63" msprop:DbTableName="SESSION_DIM" msprop:FriendlyName="SESSION_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1bf3b460-c10f-4bb4-ac78-f219c6717c52" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="SESSION" msprop:design-time-name="fde1ec21-4cd2-4051-a222-e1a02fd791aa" msprop:DbColumnName="SESSION" msprop:FriendlyName="SESSION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ETUDIANT_DIM" msprop:design-time-name="160a4462-4c47-4682-8833-672ca4fef5cc" msprop:DbTableName="ETUDIANT_DIM" msprop:FriendlyName="ETUDIANT_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="db1f646b-7b90-41d3-bc2a-474d5f14af5e" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="COD_ETU" msprop:design-time-name="9c343f87-c5ee-4a44-b427-af5cedd5ae4b" msprop:DbColumnName="COD_ETU" msprop:FriendlyName="COD_ETU" type="xs:long" minOccurs="0" />
+                  <xs:element name="CNE" msprop:design-time-name="02ee17dc-acf4-4349-9037-1d2eaaa8e03f" msprop:DbColumnName="CNE" msprop:FriendlyName="CNE" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SEMESTRE_DIM" msprop:design-time-name="bbc9a17e-e56d-4605-bca6-e89a688c7070" msprop:DbTableName="SEMESTRE_DIM" msprop:FriendlyName="SEMESTRE_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d9ceb907-3a26-4cb3-9798-0db56257fd3e" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="SEMESTRE" msprop:design-time-name="43449725-ec69-45af-b46e-3fd014ce3f95" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FILIERE_DIM" msprop:design-time-name="98849a00-69c2-4651-ae10-5c55011363fb" msprop:DbTableName="FILIERE_DIM" msprop:FriendlyName="FILIERE_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="dd33094d-83d5-41c6-8eb7-20ed3de099bf" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="FILIERE" msprop:design-time-name="a11edb41-4b4c-4b70-b8d0-5fe1cad2f7c3" msprop:DbColumnName="FILIERE" msprop:FriendlyName="FILIERE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_RESULTAT_DIM" msprop:design-time-name="0a2043a2-7969-4839-b9bc-e318c710a2c4" msprop:DbTableName="RESULTAT_DIM" msprop:FriendlyName="RESULTAT_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="08fb6d7d-e9ef-43d4-b6cc-0474bf82e72a" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="RESULTAT" msprop:design-time-name="44d6bd31-372b-423d-adb3-f46fcf61f549" msprop:DbColumnName="RESULTAT" msprop:FriendlyName="RESULTAT" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ANNEE_DIM" msprop:design-time-name="a370fac0-5e92-4919-a51b-3d974b9ca017" msprop:DbTableName="ANNEE_DIM" msprop:FriendlyName="ANNEE_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="200f6c5e-ed0a-4afc-bfcf-8e04e13611d5" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="ANNEE" msprop:design-time-name="f4f39ff6-04b2-46bd-b312-763b77ad01e0" msprop:DbColumnName="ANNEE" msprop:FriendlyName="ANNEE" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_VILLE_DIM" msprop:design-time-name="d0495ffb-f311-45d4-8bc5-b8eaf9fb8877" msprop:DbTableName="VILLE_DIM" msprop:FriendlyName="VILLE_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7fb6e1ef-cf48-472c-9cc2-6027c2c8ca8e" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="VILLE" msprop:design-time-name="7c2df781-8a51-4421-8cb8-476216151d0f" msprop:DbColumnName="VILLE" msprop:FriendlyName="VILLE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="24" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_ANNEE_VALIDATION_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ANNEE_VALIDATION_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_SEXE_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SEXE_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_BAC_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_BAC_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_MODULE_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MODULE_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_SESSION_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SESSION_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_ETUDIANT_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ETUDIANT_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_SEMESTRE_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SEMESTRE_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_FILIERE_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FILIERE_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_RESULTAT_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_RESULTAT_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_ANNEE_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ANNEE_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_VILLE_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_VILLE_DIM" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:keyref name="FK__SCOLARITE__BAC_I__797309D9" refer="dbo_BAC_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="BAC_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__MODUL__74AE54BC" refer="dbo_MODULE_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="MODULE_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__VILLE__7A672E12" refer="dbo_VILLE_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="VILLE_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__ANNEE__70DDC3D8" refer="dbo_ANNEE_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="ANNEE_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__RESUL__75A278F5" refer="dbo_RESULTAT_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="RESULTAT_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__SEMES__76969D2E" refer="dbo_SEMESTRE_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="SEMESTRE_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__SESSI__778AC167" refer="dbo_SESSION_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="SESSION_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__ANNEE__71D1E811" refer="dbo_ANNEE_VALIDATION_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="ANNEE_VALIDATION_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__ETUDI__72C60C4A" refer="dbo_ETUDIANT_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="ETUDIANT_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__SEXE___787EE5A0" refer="dbo_SEXE_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="SEXE_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__SCOLARITE__FILIE__73BA3083" refer="dbo_FILIERE_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_SCOLARITE_FACT" />
+          <xs:field xpath="FILIERE_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <ScolariteDW xmlns="" />
+  </Schema>
+</DataSourceView>

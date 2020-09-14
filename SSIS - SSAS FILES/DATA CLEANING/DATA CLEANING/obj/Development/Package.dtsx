@@ -1,0 +1,1996 @@
+<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="DESKTOP-8OLFL79\abdelbari"
+  DTS:CreatorComputerName="DESKTOP-8OLFL79"
+  DTS:CreationDate="6/2/2020 10:40:51 PM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{7B361001-1BF4-472E-B0BD-363BD3A0E27D}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:DTSID="{46D0DA93-CB2E-4EB9-B984-D6B56B445452}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BCG S3 2013 NORMALIZED]"
+      DTS:ObjectName="BCG S3 2013 NORMALIZED"
+      DTS:DTSID="{6BD60753-13C4-470C-A2A0-58B1487D1A6F}"
+      DTS:CreationName="FLATFILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\abdelbari\Desktop\BCG S3 2013.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODULE"
+              DTS:DTSID="{A072D6FC-C290-4C27-A48A-F169B97D7E49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOTE"
+              DTS:DTSID="{EC775CCB-CD29-452D-A8AC-A0D872F63C5E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RESULTAT"
+              DTS:DTSID="{0B5CE1F8-F273-4B55-8CC9-AF31B4ADAE9B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SESSION"
+              DTS:DTSID="{0F9BC8BA-CBE9-4734-AF87-16CB4817B41F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ANNEE"
+              DTS:DTSID="{7DB3F838-06A8-4AEF-A54E-B3DCAD6A4F46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SEMESTRE"
+              DTS:DTSID="{0CFDEC34-A7A2-4FF2-99F9-B51E5B701C74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COD_ETU"
+              DTS:DTSID="{22275D04-0859-4A36-951D-958865EFEEC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CNE"
+              DTS:DTSID="{6B926CE7-B068-4D51-ACC7-AF623B1A54DD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:ObjectName="Flat File Connection Manager"
+      DTS:DTSID="{A86D7014-6EC6-47EE-8483-C858905C2644}"
+      DTS:CreationName="FLATFILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\abdelbari\Desktop\DATA\BCG S3 2013.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COD_ETU"
+              DTS:DTSID="{84D80135-68D3-4103-94E9-4CF629F238FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CNE"
+              DTS:DTSID="{44AA1C67-C818-4566-85A1-695B133F2554}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Note   LBS31000"
+              DTS:DTSID="{9DC93303-3EDE-46B2-BB6D-620E5F06C301}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Résultat   LBS31000"
+              DTS:DTSID="{1262A5DA-5A81-43CA-BAE6-1134886181A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Session   LBS31000"
+              DTS:DTSID="{D0D13989-EE52-4FBF-B1EA-6BBB7D34A55C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Année   LBS31000"
+              DTS:DTSID="{D19C900D-11DE-4FED-A39A-CE5BA050C1CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Note   LCS31000"
+              DTS:DTSID="{268334BD-7DBE-4FE1-AB2C-43B2D3DFDA8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Résultat   LCS31000"
+              DTS:DTSID="{619E8FB7-2819-481F-8D3B-855F2CF0A700}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Session   LCS31000"
+              DTS:DTSID="{112DE38C-0A20-4A28-8A87-89CE692100CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Année   LCS31000"
+              DTS:DTSID="{0492D73B-20CB-410C-9B26-545C3A3494B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Note   LGS3100"
+              DTS:DTSID="{1B0C8AAE-545B-44A8-8C37-FF4B54B2DD28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Résultat   LGS3100"
+              DTS:DTSID="{5320A0AC-754D-4BFC-A765-90B698191483}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Session   LGS3100"
+              DTS:DTSID="{D826B4AE-BEC3-4909-991F-53E74ED8314C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Année   LGS3100"
+              DTS:DTSID="{77F60704-1CB3-471D-8F55-EDD9D556DC84}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Note   LMBS3100"
+              DTS:DTSID="{8A7EA36A-DD73-4417-91B4-D4A53118B7EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Résultat   LMBS3100"
+              DTS:DTSID="{9E9FB85C-9330-4B6B-BEF5-1AB9B92F3AD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Session   LMBS3100"
+              DTS:DTSID="{540A208D-79A1-4F12-BCAC-D99887E89CD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Année   LMBS3100"
+              DTS:DTSID="{548CB780-5AAA-4E80-AC8C-19D3CBBDA80C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Note   BCGS300"
+              DTS:DTSID="{412D1703-0341-4174-9567-A1AA2FF7C376}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Résultat   BCGS300"
+              DTS:DTSID="{4D0F8216-3F1D-481A-A69A-745CD7C22116}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Session   BCGS300"
+              DTS:DTSID="{CD524945-4D34-4A34-918B-03F430FBBDC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Année   BCGS300"
+              DTS:DTSID="{3F255C7A-066C-4814-B66A-D8A8804292B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semestre   LBS31000"
+              DTS:DTSID="{485A23A8-A027-4DD5-AC52-DF8723E9B18A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semestre   LCS31000"
+              DTS:DTSID="{91FED84E-899F-46E8-811E-96AA4DD198C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semestre   LGS3100"
+              DTS:DTSID="{49CA3439-A3A4-41CA-8846-AF62A006C916}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semestre   LMBS3100"
+              DTS:DTSID="{52003B51-1DE9-4F99-B783-AC59B221A026}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semestre   BCGS300"
+              DTS:DTSID="{BABAE9E2-C7A4-46FE-AE55-DD30DFA9A5BF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:DTSID="{372EF9C0-B99D-465A-AC0E-EBF334E70A0F}"
+      DTS:Description="Data Flow Task"
+      DTS:CreationName="SSIS.Pipeline.3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination"
+              name="Flat File Destination"
+              componentClassID="{8DA75FED-1B7C-407D-B2AD-2B24209CCCA4}"
+              description="Flat File Destination"
+              localeId="1033"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+              <properties>
+                <property
+                  name="Overwrite"
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file.">true</property>
+                <property
+                  name="Header"
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  name="FlatFileConnection"
+                  connectionManagerID="Package.ConnectionManagers[BCG S3 2013 NORMALIZED]"
+                  connectionManagerRefId="Package.ConnectionManagers[BCG S3 2013 NORMALIZED]" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  name="Flat File Destination Input"
+                  hasSideEffects="true">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[MODULE]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[MODULE]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MODULE]"
+                      cachedName="MODULE"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[NOTE]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NOTE]"
+                      cachedName="NOTE"
+                      cachedDataType="r4" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[RESULTAT]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[RESULTAT]"
+                      cachedName="RESULTAT"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[SESSION]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SESSION]"
+                      cachedName="SESSION"
+                      cachedDataType="i1" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ANNEE]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ANNEE]"
+                      cachedName="ANNEE"
+                      cachedDataType="i4" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[SEMESTRE]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SEMESTRE]"
+                      cachedName="SEMESTRE"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[COD_ETU]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[COD_ETU]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_ETU]"
+                      cachedName="COD_ETU"
+                      cachedDataType="i4" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[CNE]"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[CNE]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CNE]"
+                      cachedName="CNE"
+                      cachedDataType="i8" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MODULE]"
+                      name="MODULE"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NOTE]"
+                      name="NOTE"
+                      dataType="r4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[RESULTAT]"
+                      name="RESULTAT"
+                      dataType="str"
+                      length="3"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SESSION]"
+                      name="SESSION"
+                      dataType="i1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ANNEE]"
+                      name="ANNEE"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SEMESTRE]"
+                      name="SEMESTRE"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_ETU]"
+                      name="COD_ETU"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CNE]"
+                      name="CNE"
+                      dataType="i8" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Flat File Source"
+              name="Flat File Source"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+              description="Flat File Source"
+              localeId="1033"
+              usesDispositions="true"
+              version="1"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1">
+              <properties>
+                <property
+                  name="RetainNulls"
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null.">true</property>
+                <property
+                  name="FileNameColumnName"
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  name="FlatFileConnection"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COD_ETU]"
+                      name="COD_ETU"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COD_ETU]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COD_ETU]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CNE]"
+                      name="CNE"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CNE]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CNE]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LBS31000]"
+                      name="Note   LBS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LBS31000]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LBS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LBS31000]"
+                      name="Résultat   LBS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LBS31000]"
+                      length="3"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LBS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LBS31000]"
+                      name="Session   LBS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LBS31000]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LBS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LBS31000]"
+                      name="Année   LBS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LBS31000]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LBS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LCS31000]"
+                      name="Note   LCS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LCS31000]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LCS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LCS31000]"
+                      name="Résultat   LCS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LCS31000]"
+                      length="3"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LCS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LCS31000]"
+                      name="Session   LCS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LCS31000]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LCS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LCS31000]"
+                      name="Année   LCS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LCS31000]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LCS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LGS3100]"
+                      name="Note   LGS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LGS3100]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LGS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LGS3100]"
+                      name="Résultat   LGS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LGS3100]"
+                      length="3"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LGS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LGS3100]"
+                      name="Session   LGS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LGS3100]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LGS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LGS3100]"
+                      name="Année   LGS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LGS3100]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LGS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LMBS3100]"
+                      name="Note   LMBS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LMBS3100]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LMBS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LMBS3100]"
+                      name="Résultat   LMBS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LMBS3100]"
+                      length="3"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LMBS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LMBS3100]"
+                      name="Session   LMBS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LMBS3100]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LMBS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LMBS3100]"
+                      name="Année   LMBS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LMBS3100]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LMBS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   BCGS300]"
+                      name="Note   BCGS300"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   BCGS300]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   BCGS300]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   BCGS300]"
+                      name="Résultat   BCGS300"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   BCGS300]"
+                      length="3"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   BCGS300]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   BCGS300]"
+                      name="Session   BCGS300"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   BCGS300]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   BCGS300]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   BCGS300]"
+                      name="Année   BCGS300"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   BCGS300]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   BCGS300]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LBS31000]"
+                      name="Semestre   LBS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LBS31000]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LBS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LCS31000]"
+                      name="Semestre   LCS31000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LCS31000]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LCS31000]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LGS3100]"
+                      name="Semestre   LGS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LGS3100]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LGS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LMBS3100]"
+                      name="Semestre   LMBS3100"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LMBS3100]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LMBS3100]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   BCGS300]"
+                      name="Semestre   BCGS300"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   BCGS300]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   BCGS300]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COD_ETU]"
+                      name="COD_ETU"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CNE]"
+                      name="CNE"
+                      dataType="i8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LBS31000]"
+                      name="Note   LBS31000"
+                      dataType="r4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LBS31000]"
+                      name="Résultat   LBS31000"
+                      dataType="str"
+                      length="3"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LBS31000]"
+                      name="Session   LBS31000"
+                      dataType="i1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LBS31000]"
+                      name="Année   LBS31000"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LCS31000]"
+                      name="Note   LCS31000"
+                      dataType="r4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LCS31000]"
+                      name="Résultat   LCS31000"
+                      dataType="str"
+                      length="3"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LCS31000]"
+                      name="Session   LCS31000"
+                      dataType="i1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LCS31000]"
+                      name="Année   LCS31000"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LGS3100]"
+                      name="Note   LGS3100"
+                      dataType="r4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LGS3100]"
+                      name="Résultat   LGS3100"
+                      dataType="str"
+                      length="3"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LGS3100]"
+                      name="Session   LGS3100"
+                      dataType="i1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LGS3100]"
+                      name="Année   LGS3100"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   LMBS3100]"
+                      name="Note   LMBS3100"
+                      dataType="r4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   LMBS3100]"
+                      name="Résultat   LMBS3100"
+                      dataType="str"
+                      length="3"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   LMBS3100]"
+                      name="Session   LMBS3100"
+                      dataType="i1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   LMBS3100]"
+                      name="Année   LMBS3100"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Note   BCGS300]"
+                      name="Note   BCGS300"
+                      dataType="r4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Résultat   BCGS300]"
+                      name="Résultat   BCGS300"
+                      dataType="str"
+                      length="3"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Session   BCGS300]"
+                      name="Session   BCGS300"
+                      dataType="i1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Année   BCGS300]"
+                      name="Année   BCGS300"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LBS31000]"
+                      name="Semestre   LBS31000"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LCS31000]"
+                      name="Semestre   LCS31000"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LGS3100]"
+                      name="Semestre   LGS3100"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   LMBS3100]"
+                      name="Semestre   LMBS3100"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Semestre   BCGS300]"
+                      name="Semestre   BCGS300"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  name="Flat File Source Error Output"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      dataType="text"
+                      codePage="1252" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Unpivot"
+              name="Unpivot"
+              componentClassID="{B8B094A9-8809-4E06-8874-5C55606A9FDF}"
+              description="Expands an un-normalized data flow into a more normalized version. Values from multiple columns of a single record expand to multiple records in a single column. For example, expand a table that lists athletic scores with a column for each game to more records and a single score column."
+              contactInfo="Unpivot;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input]"
+                  name="Unpivot Input"
+                  hasSideEffects="true">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Note   LBS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LBS31000]"
+                      cachedName="Note   LBS31000"
+                      cachedDataType="r4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LBS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Résultat   LBS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LBS31000]"
+                      cachedName="Résultat   LBS31000"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LBS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Session   LBS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LBS31000]"
+                      cachedName="Session   LBS31000"
+                      cachedDataType="i1">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LBS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Année   LBS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LBS31000]"
+                      cachedName="Année   LBS31000"
+                      cachedDataType="i4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LBS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Note   LCS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LCS31000]"
+                      cachedName="Note   LCS31000"
+                      cachedDataType="r4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LCS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Résultat   LCS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LCS31000]"
+                      cachedName="Résultat   LCS31000"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LCS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Session   LCS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LCS31000]"
+                      cachedName="Session   LCS31000"
+                      cachedDataType="i1">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LCS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Année   LCS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LCS31000]"
+                      cachedName="Année   LCS31000"
+                      cachedDataType="i4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LCS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Note   LGS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LGS3100]"
+                      cachedName="Note   LGS3100"
+                      cachedDataType="r4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LGS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Résultat   LGS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LGS3100]"
+                      cachedName="Résultat   LGS3100"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LGS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Session   LGS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LGS3100]"
+                      cachedName="Session   LGS3100"
+                      cachedDataType="i1">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LGS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Année   LGS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LGS3100]"
+                      cachedName="Année   LGS3100"
+                      cachedDataType="i4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LGS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Note   LMBS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   LMBS3100]"
+                      cachedName="Note   LMBS3100"
+                      cachedDataType="r4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LMBS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Résultat   LMBS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   LMBS3100]"
+                      cachedName="Résultat   LMBS3100"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LMBS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Session   LMBS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   LMBS3100]"
+                      cachedName="Session   LMBS3100"
+                      cachedDataType="i1">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LMBS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Année   LMBS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   LMBS3100]"
+                      cachedName="Année   LMBS3100"
+                      cachedDataType="i4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LMBS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Note   BCGS300]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Note   BCGS300]"
+                      cachedName="Note   BCGS300"
+                      cachedDataType="r4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">BCGS300</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Résultat   BCGS300]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Résultat   BCGS300]"
+                      cachedName="Résultat   BCGS300"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">BCGS300</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Session   BCGS300]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Session   BCGS300]"
+                      cachedName="Session   BCGS300"
+                      cachedDataType="i1">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">BCGS300</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Année   BCGS300]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Année   BCGS300]"
+                      cachedName="Année   BCGS300"
+                      cachedDataType="i4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">BCGS300</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Semestre   LBS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LBS31000]"
+                      cachedName="Semestre   LBS31000"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LBS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Semestre   LCS31000]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LCS31000]"
+                      cachedName="Semestre   LCS31000"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LCS31000</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Semestre   LGS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LGS3100]"
+                      cachedName="Semestre   LGS3100"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LGS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Semestre   LMBS3100]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   LMBS3100]"
+                      cachedName="Semestre   LMBS3100"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">LMBS3100</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[Semestre   BCGS300]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Semestre   BCGS300]"
+                      cachedName="Semestre   BCGS300"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.String"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify">BCGS300</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[COD_ETU]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COD_ETU]"
+                      cachedName="COD_ETU"
+                      cachedDataType="i4">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[COD_ETU]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.Null"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input].Columns[CNE]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CNE]"
+                      cachedName="CNE"
+                      cachedDataType="i8">
+                      <properties>
+                        <property
+                          name="DestinationColumn"
+                          dataType="System.Int32"
+                          description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column’s value is not used in output rows."
+                          containsID="true">#{Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[CNE]}</property>
+                        <property
+                          name="PivotKeyValue"
+                          dataType="System.Null"
+                          description="Specifies the value written to the PivotKey column in the output row."
+                          expressionType="Notify" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output]"
+                  name="Unpivot Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[MODULE]"
+                      name="MODULE"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[MODULE]"
+                      length="255"
+                      dataType="wstr">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">true</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]"
+                      name="NOTE"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[NOTE]"
+                      dataType="r4">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]"
+                      name="RESULTAT"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[RESULTAT]"
+                      length="3"
+                      dataType="str"
+                      codePage="1252">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]"
+                      name="SESSION"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SESSION]"
+                      dataType="i1">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]"
+                      name="ANNEE"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[ANNEE]"
+                      dataType="i4">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]"
+                      name="SEMESTRE"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[SEMESTRE]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[COD_ETU]"
+                      name="COD_ETU"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[COD_ETU]"
+                      dataType="i4">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[CNE]"
+                      name="CNE"
+                      lineageId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output].Columns[CNE]"
+                      dataType="i8">
+                      <properties>
+                        <property
+                          name="PivotKey"
+                          dataType="System.Boolean"
+                          description="Indicates whether the value in the PivotKeyValue property is written to the column in the new row.">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+              endId="Package\Data Flow Task\Unpivot.Inputs[Unpivot Input]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Unpivot Output]"
+              name="Unpivot Output"
+              startId="Package\Data Flow Task\Unpivot.Outputs[Unpivot Output]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task"
+          TopLeft="256,119" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="455,97" />
+        <NodeLayout
+          Size="114,42"
+          Id="Package\Data Flow Task\Unpivot"
+          TopLeft="466,207" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="526.5,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="453,320" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Unpivot Output]"
+          TopLeft="523,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.5,71"
+              Start="0,0"
+              End="15.5,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="4,35.5" />
+                  <mssgle:LineSegment
+                    End="11.5,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.5,35.5"
+                    Point2="15.5,35.5"
+                    Point3="15.5,39.5" />
+                  <mssgle:LineSegment
+                    End="15.5,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

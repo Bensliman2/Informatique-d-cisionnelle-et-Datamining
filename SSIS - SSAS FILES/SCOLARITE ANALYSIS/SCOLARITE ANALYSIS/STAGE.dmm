@@ -1,0 +1,290 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="14d114a6-b6d0-4748-9d51-0a5eb82c2112" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>STAGE</ID>
+  <Name>STAGE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_STAGE</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fdecf062-85c6-40b9-acea-50820d5fd3fc">
+    <DataSourceViewID>ScolariteSTAGE</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e39801f5-5b9b-4160-8d7d-bba1c93c83e8">
+      <ID>ANNEE</ID>
+      <Name>ANNEE</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b8cbae4-8c9e-45b0-9acd-57b5550378ef">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05813ea1-a515-4135-a8c8-d64a8d298a09">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>ANNEE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1a3a038a-4630-4d0f-b990-3f2c88f7860e">
+      <ID>BAC</ID>
+      <Name>BAC</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72a015cb-f396-4ac1-81c9-03f978dc79e0">
+          <DataType>WChar</DataType>
+          <DataSize>26</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c94253e-33f1-488d-9184-d5ead4c02a82">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>BAC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a0108638-4725-42fc-9837-7223dc5d926b">
+      <ID>BAC DATE</ID>
+      <Name>BAC DATE</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a2ee3d5-bd9f-4f1d-8fa1-12d069ae082c">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84ae1e64-b5ca-42a9-92de-a24091c727f5">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>BAC_x0020_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bc0e90ce-8603-4248-a9b1-a47f261daa5f">
+      <ID>COD ETU</ID>
+      <Name>COD ETU</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f010430-cdb8-4f65-b4e8-e0dd59408a38">
+          <DataType>BigInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75097af0-8a93-464c-82f0-d3b45a7e9fc3">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>COD_ETU</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1b257f65-bd60-4a5c-b148-196aca3ed8e1">
+      <ID>FILIERE</ID>
+      <Name>FILIERE</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d422bc3-a360-4f44-bec4-b356179fd9a9">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14684cd2-ab46-452e-895f-a353151f1560">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>FILIERE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c11af81e-be41-4d02-a228-c0c20e063d9d">
+      <ID>MODULE</ID>
+      <Name>MODULE</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="deaf72cf-9f47-4e11-abdc-bf01c69a5510">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d150c1c4-1928-40a2-92ce-3895ac18d79c">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>MODULE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="51857f71-8e56-414e-a4e4-f3c02f19c205">
+      <ID>RESULTAT</ID>
+      <Name>RESULTAT</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e013f2a-6650-41fc-bd78-13cfb1166206">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cbb651c-d310-4d2d-beda-8c270be02de0">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>RESULTAT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="698cb404-89d4-4ca3-8142-2791c07b146b">
+      <ID>SESSION</ID>
+      <Name>SESSION</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6fb75cdd-6fef-4ebb-bea8-2df50d939248">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51fc5035-7b1e-4f2f-ba63-c1dd932331cd">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>SESSION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c3389635-ace5-4d6a-8871-b2302babb120">
+      <ID>SESSION STR</ID>
+      <Name>SESSION STR</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a65e25ba-6b1c-4352-893e-10f37bffe5e0">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="368b10d1-7dd8-489b-a503-2ea4dcfdea1e">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>SESSION_x0020_STR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c5e1eccb-34ab-47f8-85e0-30cca1b13354">
+      <ID>VILLE</ID>
+      <Name>VILLE</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dcf92f72-025c-426c-b887-c04d85517f90">
+          <DataType>WChar</DataType>
+          <DataSize>24</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38dc0a95-67a6-4871-9a8e-3526c8cbdda7">
+            <TableID>dbo_STAGE</TableID>
+            <ColumnID>VILLE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="ed1c1802-47b5-494e-9cb5-17861b29b560">
+      <ID>STAGE</ID>
+      <Name>STAGE</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="e0cf0d4f-5913-42f7-8270-5e499fa52157">
+          <ID>ANNEE</ID>
+          <Name>ANNEE</Name>
+          <SourceColumnID>ANNEE</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4f5e7485-97b2-42cd-94df-f83e9d8e0338">
+          <ID>BAC</ID>
+          <Name>BAC</Name>
+          <SourceColumnID>BAC</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4256e5f4-99c6-48e4-afcf-9f39710842cd">
+          <ID>BAC DATE</ID>
+          <Name>BAC DATE</Name>
+          <SourceColumnID>BAC DATE</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="56101b9e-7f5a-4295-947d-9f0ffd8b32bf">
+          <ID>COD ETU</ID>
+          <Name>COD ETU</Name>
+          <SourceColumnID>COD ETU</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="366c7b2c-0874-4c63-867b-33afebe12c24">
+          <ID>FILIERE</ID>
+          <Name>FILIERE</Name>
+          <SourceColumnID>FILIERE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="57f82290-d6f0-48bf-9ffc-bd65774027ed">
+          <ID>MODULE</ID>
+          <Name>MODULE</Name>
+          <SourceColumnID>MODULE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8fcbda01-7ed1-44ef-bdda-d7661f0464a5">
+          <ID>RESULTAT</ID>
+          <Name>RESULTAT</Name>
+          <SourceColumnID>RESULTAT</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="fb43944c-3679-4d77-a51a-4f836454a007">
+          <ID>SESSION</ID>
+          <Name>SESSION</Name>
+          <SourceColumnID>SESSION</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="30ace68a-604e-4344-944a-8c3226ad32e8">
+          <ID>SESSION STR</ID>
+          <Name>SESSION STR</Name>
+          <SourceColumnID>SESSION STR</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="16f37ed0-7c19-4773-9abe-fc6d5d558c22">
+          <ID>VILLE</ID>
+          <Name>VILLE</Name>
+          <SourceColumnID>VILLE</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
